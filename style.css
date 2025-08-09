@@ -54,6 +54,7 @@ body{
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding: 10px;
     
 }
 
@@ -76,13 +77,97 @@ body{
     padding: 15px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.nav {
+  
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: transparent; 
+  color: grey;           
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buttons button:hover {
+   color: white;
+}
+
+.buttons span {
+  color: grey;
+}
+
+
+/* Target only the last button inside .buttons (Login) */
+.buttons button:last-child {
+  background-color: #fff;  
+  color: #000;           
+  border: none;
+  padding: 8px 16px;
+  border-radius: 15px;    
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons button:last-child:hover {
+  background-color: #ddd; 
+
+}
+
+
+
 /* right section styling */
+.spotifyPlaylists{
+    margin: 25px 0 0 25px;
+}
 
 .spotifyPlaylists h2{
-    padding: 3px;
     margin: 3px;
 }
 
-.spotifyPlaylists .card{
-    width: 250px;
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.card{
+    width: 135px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #252525;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card > *{
+    padding-top: 3px;
+}
+
+.play{
+    position: absolute;
+    top: 90px;
+    right: 10px;
 }
