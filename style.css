@@ -36,7 +36,7 @@ body{
 }
 .left{
     width: 25vw;
-    padding: 10px;
+    padding: 3px;
 }
 
 .right{
@@ -57,6 +57,10 @@ body{
     
 }
 
+.right{
+    margin: 7px 0;
+}
+
 .footer a{
     color: grey;
 }
@@ -66,4 +70,19 @@ body{
     justify-content: end;
     padding-bottom: 15px;
     gap: 4px;
+}
+
+.header{
+    padding: 15px;
+}
+
+/* right section styling */
+
+.spotifyPlaylists h2{
+    padding: 3px;
+    margin: 3px;
+}
+
+.spotifyPlaylists .card{
+    width: 250px;
 }
