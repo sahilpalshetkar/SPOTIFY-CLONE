@@ -60,6 +60,7 @@ body{
 
 .right{
     margin: 7px 0;
+    position: relative;
 }
 
 .footer a{
@@ -157,6 +158,11 @@ body{
     position: relative;
 }
 
+.card p{
+    font-size: small;
+    font-weight: 500;
+}
+
 .card img{
     width: 100%;
     object-fit: contain;
@@ -170,4 +176,18 @@ body{
     position: absolute;
     top: 90px;
     right: 10px;
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+    padding: 12px;
+}
+
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
