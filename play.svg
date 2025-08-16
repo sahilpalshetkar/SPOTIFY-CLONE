@@ -1,5 +1,5 @@
 <!-- Simple filled play icon -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" aria-hidden="false" role="img">
   <title>Play</title>
-  <path d="M5 3v18l14-9L5 3z" fill="currentColor"/>
+  <path d="M5 3v18l14-9L5 3z" fill="black"/>
 </svg>
