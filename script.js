@@ -24,29 +24,20 @@ async function main(){
     let songs = await getSongs()
     console.log(songs)
 
+    //show the all in the playlist
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
     for (const song of songs) {
-        songUL.innerHTML = songUL.innerHTML + `
-        <li>
-                <img src="music.svg" alt="">
+        songUL.innerHTML = songUL.innerHTML + `<li><img src="music.svg" alt="">
                 <div class="info">
                   ${song.replace("%5BOfficial_Music_Video%5D", "")}
                   <div></div>
                 </div>
                 <div class="playnow">
                   <span>Play</span>
-                  <img class="invert" src="play.svg" alt="">
-                </div>
-              </li>
-              `
+                  <img src="play.svg" alt="">
+                </div></li> `
     }
 
-    //Play the first song
-    var audio = new Audio(songs[0]);
-    audio.play();
 
-    audio.addEventListener("loadeddata", ()=>{
-        console.log(audio.duration, audio.currentSrc, audio.currentTime)
-    })
 }
 main()

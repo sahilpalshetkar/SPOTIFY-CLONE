@@ -1,5 +1,5 @@
 <!-- Simple filled next icon -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" role="img" aria-label="Next">
   <title>Next</title>
-  <path d="M16 4v16h2V4h-2zm-3 8L4 18V6l9 6z" fill="black"/>
+  <path d="M16 4v16h2V4h-2zm-3 8L4 18V6l9 6z" fill="#b8adadff"/>
 </svg>
