@@ -1,5 +1,5 @@
-<!-- Simple filled previous icon -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" role="img" aria-label="Previous">
-  <title>Previous</title>
-  <path d="M6 4v16h2V4H6zm3 8l9 6V6l-9 6z" fill="#b8adadff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" aria-label="Previous Button">
+  <circle cx="14" cy="14" r="14" fill="#111"/>
+  <polygon points="16,8 16,20 9,14" fill="#fff"/>
+  <rect x="17" y="8" width="2" height="12" fill="#fff"/>
 </svg>

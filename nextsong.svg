@@ -1,5 +1,5 @@
-<!-- Simple filled next icon -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" role="img" aria-label="Next">
-  <title>Next</title>
-  <path d="M16 4v16h2V4h-2zm-3 8L4 18V6l9 6z" fill="#b8adadff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" aria-label="Next Button">
+  <circle cx="14" cy="14" r="14" fill="#111"/>
+  <polygon points="12,8 12,20 19,14" fill="#fff"/>
+  <rect x="9" y="8" width="2" height="12" fill="#fff"/>
 </svg>
