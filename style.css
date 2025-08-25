@@ -143,16 +143,22 @@ body{
     margin: 3px;
 }
 
+.cardTitles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .cardContainer{
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
     overflow-y: scroll;
-    max-height: 70vh;
+    max-height: 31vh;
 }
 
 .card{
-    width: 135px;
+    min-width: 135px;
+    max-width: 135px;
     padding: 5px;
     cursor: pointer;
     background-color: #252525;
@@ -185,7 +191,7 @@ body{
     background-color: #303030;
     padding: 4px 6px 12px;
     width: 142vh;
-    height: 40px;
+    min-height: 40px;
     border-radius: 40px;
 }
 
@@ -283,8 +289,8 @@ body{
     left: -180%;
     transition: all .3s;
     z-index: 1;
-    width: 433px;
-    zoom: 158%;
+    width: 330px;
+    zoom: 117%;
   }
 
   .right{
@@ -293,9 +299,32 @@ body{
 
   .playbar{
     width: 95vw;
+    left: 3px;
+  }
+
+  .seekbar{
+    width: 85%;
   }
 
   .hamburger{
     display: block;
   }
+
+  .buttons .none{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+    .cardContainer{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        overflow-y: scroll;
+        max-height: 31vh;
+    }
+
+    .songinfo{
+        overflow: auto;
+    }
 }
