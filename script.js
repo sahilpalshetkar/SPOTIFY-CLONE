@@ -52,7 +52,7 @@ async function main(){
     for (const song of songs) {
         songUL.innerHTML = songUL.innerHTML + `<li><img src="music.svg" alt="">
                 <div class="info">
-                 <div>${song.replace("%5BOfficial_Music_Video%5D", "")}</div>
+                 <div>${song}</div>
                   <div>Sahil</div>
                 </div>
                 <div class="playnow">
@@ -95,5 +95,31 @@ async function main(){
     document.querySelector(".circle").style.left = percent + "%";
     currentSong.currentTime = ((currentSong.duration) * percent) / 100
    })
+
+    const hamburger = document.querySelector(".hamburger");
+    const closeBtn = document.querySelector(".close");
+    const left = document.querySelector(".left");
+
+    // make sure close starts hidden
+    closeBtn.style.display = "none";
+
+    hamburger.addEventListener("click", () => {
+    left.style.left = "0";
+
+    // hide hamburger, show close
+    hamburger.style.display = "none";
+    closeBtn.style.display = "block";
+    closeBtn.innerHTML = `<img class="invert" src="close.svg" alt="close" width="28" height="28">`;
+    });
+
+    closeBtn.addEventListener("click", () => {
+    left.style.left = "-180%";
+
+    // hide close, show hamburger
+    closeBtn.style.display = "none";
+    hamburger.style.display = "block";
+    hamburger.innerHTML = `<img class="invert" src="hamburger.svg" alt="menu" width="28" height="28">`;
+    });
+
 }
 main()
